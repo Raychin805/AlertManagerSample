@@ -16,7 +16,50 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWJ-8l-fDW">
+                                <rect key="frame" x="88" y="80" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="R4j-HX-DMR"/>
+                                    <constraint firstAttribute="width" constant="200" id="YrZ-Lb-yW2"/>
+                                </constraints>
+                                <state key="normal" title="Show OK Alert"/>
+                                <connections>
+                                    <action selector="pressedOKAlertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d7M-eE-mfp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6a-hg-ATj">
+                                <rect key="frame" x="87" y="200" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EBy-8d-cTi"/>
+                                    <constraint firstAttribute="width" constant="200" id="gje-t5-6a8"/>
+                                </constraints>
+                                <state key="normal" title="Custom Action Alert"/>
+                                <connections>
+                                    <action selector="pressedCustomActionAlertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C2Q-OO-ay6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaZ-L5-mpd">
+                                <rect key="frame" x="113" y="320" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="61E-T9-3X5"/>
+                                    <constraint firstAttribute="width" constant="150" id="VQ4-bS-xki"/>
+                                </constraints>
+                                <state key="normal" title="Pending Demo"/>
+                                <connections>
+                                    <action selector="pressedPendingDemoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="92b-qX-a4u"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MaZ-L5-mpd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2vd-pi-Llc"/>
+                            <constraint firstItem="MaZ-L5-mpd" firstAttribute="top" secondItem="C6a-hg-ATj" secondAttribute="bottom" constant="90" id="Pc7-er-V2l"/>
+                            <constraint firstItem="C6a-hg-ATj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZCe-Be-ZfA"/>
+                            <constraint firstItem="EWJ-8l-fDW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eJG-NJ-0tt"/>
+                            <constraint firstItem="C6a-hg-ATj" firstAttribute="top" secondItem="EWJ-8l-fDW" secondAttribute="bottom" constant="90" id="fee-eU-8Ag"/>
+                            <constraint firstItem="EWJ-8l-fDW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="zXL-CA-Lf5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
